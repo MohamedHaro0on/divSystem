@@ -4,6 +4,7 @@
     align-items: center ; 
     justify-content : center ;
     min-height : 400px ;
+    width : 100% ;
     .Container{
         display : grid ;
         grid-template-columns: 42% 25% 33% ;
@@ -34,7 +35,7 @@
                     }
                 }
 
-                @media (max-width:622px) {
+                @media (max-width:826px) {
                     display : flex ;
                     display : flex;
                     justify-content : space-around ;
@@ -51,7 +52,7 @@
         @media (max-width:1088px) {
             grid-template-columns: 50% 50% ;
         }
-        @media (max-width:742px) {
+        @media (max-width:826px) {
             grid-template-columns:  100% ;
         }
     }

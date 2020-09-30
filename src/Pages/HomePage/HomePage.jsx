@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import MainPhoto from './MainPhoto'
+import Services from './Services'
+import Welcome from './Welcome'
 function HomePage() {
     return (
-        <div>
-            <MainPhoto/>
-        </div>
+        <Fragment>
+            <MainPhoto />
+            <Welcome/>
+            <Services/>
+        </Fragment>
     )
-}   
+}
 
 export default HomePage
