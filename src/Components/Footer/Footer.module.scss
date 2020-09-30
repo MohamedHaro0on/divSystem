@@ -1,0 +1,58 @@
+.Footer{
+    background-color : #000410 ;
+    display : flex ;
+    align-items: center ; 
+    justify-content : center ;
+    min-height : 400px ;
+    .Container{
+        display : grid ;
+        grid-template-columns: 42% 25% 33% ;
+        h2{
+            color : #fff ;
+        }
+        .DivSystems{
+            p{
+                color : #777777 ;
+                max-width : 90% ;
+            }
+        }
+
+        .LinksContainer{
+            ul{
+                padding : 0px ;
+                margin-top : 0px ;
+                list-style: none ;
+                li{
+                    padding-top : 10px ;
+                    a{
+                        color : #fff ;
+                        text-decoration: none ;
+                        transition : all .3s ;
+                        &:hover{
+                            color :#060030 ;    
+                        }
+                    }
+                }
+
+                @media (max-width:622px) {
+                    display : flex ;
+                    display : flex;
+                    justify-content : space-around ;
+                    li{
+                        width : 30% ;
+                    }
+                }
+            }
+        }
+        .CompanyLocation , .LinksContainer , .DivSystems {
+            padding : 10px ;
+        }
+
+        @media (max-width:1088px) {
+            grid-template-columns: 50% 50% ;
+        }
+        @media (max-width:742px) {
+            grid-template-columns:  100% ;
+        }
+    }
+}

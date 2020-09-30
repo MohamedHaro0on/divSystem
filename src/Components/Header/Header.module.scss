@@ -1,0 +1,66 @@
+.Header {
+    transition: all 0.3s;
+    background-color: #060030;
+    overflow: hidden;
+    .Container {
+        width : 90% ;
+        margin : auto ;
+        padding: 5px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap : wrap ;
+        h1{
+            .HeaderToggler{
+                display : none ;
+            }
+            @media (max-width:622px) {
+                width : 100% ;
+                display : flex ;
+                justify-content : space-between ;
+                .HeaderToggler{
+                    display : block ;
+                    outline : none ;
+                    border : none ;
+                    background-color : transparent ;
+                    cursor: pointer ;
+                    color : #fff ;
+                }
+            }
+        }
+        .RoutsList {
+            padding: 0px;
+            list-style: none;
+            display: flex;
+            min-width: 30%;
+            justify-content: space-around;
+            li a {
+                color: #fff;
+                text-decoration: none;
+            }
+            @media (max-width:1060px) {
+                width : 50% ;
+            }
+            @media (max-width:622px) {
+                width : 100% ;
+                flex-wrap : wrap ;
+                li{
+                    width : 100% ;
+                    padding : 10px ;
+                }
+            }
+        }
+    }
+}
+
+.HeaderOpened{
+    @media (max-width:622px) {
+        height : 300px; 
+    }
+}
+
+.HeaderClosed{
+    @media (max-width:622px) {
+        height : 100px ;
+    }
+}
