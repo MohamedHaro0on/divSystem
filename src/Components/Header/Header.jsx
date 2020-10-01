@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect} from 'react'
+import React, { useState, useLayoutEffect } from 'react'
 import ClassNames from "./Header.module.scss";
 import Logo from "../../Images/logo.png";
 import { Link } from "react-router-dom";
@@ -10,7 +10,7 @@ function Header() {
     // this is to handle the Toggle Button .
     useLayoutEffect(() => {
         const handleResize = () => {
-            setHeaderOpened(!window.innerWidth>622) ;
+            setHeaderOpened(!window.innerWidth > 622);
         }
         window.addEventListener("resize", handleResize)
         // this is the Cleaning Up . 
@@ -20,7 +20,7 @@ function Header() {
     // this is to handle the Stickness of the Header ;
     useLayoutEffect(() => {
         const handleScroll = () => {
-            const sticky = window.pageYOffset >= 200
+            const sticky = window.pageYOffset >= 1000
             setSticky(sticky);
         }
         window.addEventListener("scroll", handleScroll)
@@ -44,8 +44,8 @@ function Header() {
         <header className={AppliedClasses.join(" ").trim()}>
             <div className={ClassNames.Container}>
                 <h1>
-                    <Link to ="/"><img src={Logo} alt="The Logo" title="The Logo" className={ClassNames.Logo} /></Link>
-                    <button className={ClassNames.HeaderToggler} onClick={toggleHeader}> toggle</button>
+                    <Link to="/"><img src={Logo} alt="The Logo" title="The Logo" className={ClassNames.Logo} /></Link>
+                    <button className={ClassNames.HeaderToggler} onClick={toggleHeader}>toggle</button>
                 </h1>
                 <ul className={ClassNames.RoutsList}>
                     {routes.map((route, index) => {

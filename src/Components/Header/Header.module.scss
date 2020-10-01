@@ -1,9 +1,9 @@
 .Header {
-    transition: all 1s;
+    transition: all .3s;
     overflow: hidden;
     position: absolute;
-    width: 100%;    
-
+    width: 100%; 
+    z-index : 3 ; 
     .Container {
         width: 90%;
         margin: auto;
@@ -12,6 +12,7 @@
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
+        color : #fff ;
         h1 {
             margin: 0.25rem;
             .Logo {
@@ -62,6 +63,7 @@
 }
 
 .HeaderOpened {
+    background-color : rgba(0,0,0,.8) ;
     @media (max-width: 622px) {
         height: 250px;
     }
@@ -75,5 +77,4 @@
 .Sticky {
     background-color: #060030;
     position : fixed ;
-    top : 0px ;
 }
