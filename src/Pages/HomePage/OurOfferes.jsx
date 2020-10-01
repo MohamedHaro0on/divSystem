@@ -9,28 +9,13 @@ import CarouselThirdImage from "../../Images/post-s-3.jpg";
 import CarouselForthImage from "../../Images/post-s-4.jpg";
 function OurOfferes() {
     const [items, setItems] = useState(SetITemsAccordingToWindowWidth);
-
-    function SetITemsAccordingToWindowWidth (){
+    function SetITemsAccordingToWindowWidth() {
         let width = window.innerWidth;
-        if (width > 1500) {
-            return 4;
-        }
-        else if (width < 1500 && width > 1000) {
-            return 3 ;
-        }
-        else if (width > 800 && width < 1000) {
-            return 2 
-        }
-        else {
-            return 1 ;
-        }
+        return width > 1500 ? 4 : width > 1000 ? 3 : width > 800 ? 2 : 1;
     }
-
     useEffect(() => {
         const handleResize = () => {
-            console.log("this is the function Call ")
             setItems(SetITemsAccordingToWindowWidth)
-
         }
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
@@ -65,7 +50,7 @@ function OurOfferes() {
                     return (
                         <div className={ClassNames.Container} key={index}>
                             <div className={ClassNames.OverLay}> <h4>{item.Caption}</h4></div>
-                            <img src={item.image} alt = {item.Caption} />
+                            <img src={item.image} alt={item.Caption} />
                         </div>
                     )
                 })}
@@ -74,4 +59,4 @@ function OurOfferes() {
     )
 }
 
-export default OurOfferes
+export default OurOfferes;
