@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import MainPhoto from './MainPhoto'
+import OurOfferes from './OurOfferes'
 import Services from './Services'
 import Welcome from './Welcome'
 function HomePage() {
@@ -8,6 +9,7 @@ function HomePage() {
             <MainPhoto />
             <Welcome/>
             <Services/>
+            <OurOfferes/>
         </Fragment>
     )
 }

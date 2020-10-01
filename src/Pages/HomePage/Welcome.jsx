@@ -9,7 +9,7 @@ function Welcome() {
     return (
         <section className={ClassNames.Welcome}>
             <img src={WelcomeImage} alt="Welcome to Div Systems" title="welcome to div systems" className={ClassNames.WelcomeImage} />
-            <div className = {ClassNames.Discription}>
+            <div className={ClassNames.Discription}>
                 <DarkBlue>Welcome to Div Systems</DarkBlue>
                 <h4>Soft Ware Development Company.</h4>
                 <DarkBlue>Development is the future of everything.</DarkBlue>

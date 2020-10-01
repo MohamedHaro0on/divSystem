@@ -15,37 +15,37 @@ function Services() {
         {
             image: BusinessSolutions,
             title: "Business Solutions",
-            dics: "We bring our talent to your project when and where you need it most whether it's temporary or long-term, a custom implementation solution, or developing a software application.",
+            disc: "We bring our talent to your project when and where you need it most whether it's temporary or long-term, a custom implementation solution, or developing a software application.",
             href: "/business-solutions"
         },
         {
             image: Fintech,
             title: "Fintech Solutions",
-            dics: "Div provides qualified development team services for fintech firms and advanced software product development services. We design e-commerce and financial applications for wide-scale businesses.",
+            disc: "Div provides qualified development team services for fintech firms and advanced software product development services. We design e-commerce and financial applications for wide-scale businesses.",
             href: "/business-solutions"
         },
         {
             image: Web,
             title: "Web",
-            dics: "Web Design and Web Development solutions to deliver a complete online digital solution extension to your business allowing people to interact and connect with you in an easy way.",
+            disc: "Web Design and Web Development solutions to deliver a complete online digital solution extension to your business allowing people to interact and connect with you in an easy way.",
             href: "/business-solutions"
         },
         {
             image: Mobile,
             title: "Mobile Application",
-            dics: "Build Professional Native iOS and Android Mobile Apps with a experienced Mobile Applications Designers and Developers working on IOS and Android Platforms to bring your ideas into reality. ",
+            disc: "Build Professional Native iOS and Android Mobile Apps with a experienced Mobile Applications Designers and Developers working on IOS and Android Platforms to bring your ideas into reality. ",
             href: "/business-solutions"
         },
         {
             image: Testing,
             title: "Software Testing",
-            dics: "Professional testing team to test your company capabilities and experience in web and mobile application.We test customer-facing using a community of professional software testers.",
+            disc: "Professional testing team to test your company capabilities and experience in web and mobile application.We test customer-facing using a community of professional software testers.",
             href: "/business-solutions"
         },
         {
             image: Consulting,
             title: "Consulting Services",
-            dics: "Fortuler help in changing capacity and business issues by renaming structures and advances which are less mind-boggling to realize, simple to utilize and quantifiable for delegates to perform.",
+            disc: "Fortuler help in changing capacity and business issues by renaming structures and advances which are less mind-boggling to realize, simple to utilize and quantifiable for delegates to perform.",
             href: "/business-solutions"
         },
     ]
@@ -56,9 +56,9 @@ function Services() {
                 return (
                     <div className={ClassNames.Card} key={index}>
                         <div>
-                            <img src={content.image} alt={content.title} alt={content.title} />
+                            <img src={content.image}  alt={content.title} />
                             <DarkBlue>{content.title}</DarkBlue>
-                            <Muted> {content.dics} </Muted>
+                            <Muted> {content.disc} </Muted>
                             <Button>
                                 <Link to={content.href}> {content.title}</Link>
                             </Button>

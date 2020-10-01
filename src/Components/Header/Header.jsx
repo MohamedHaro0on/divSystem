@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect, useRef } from 'react'
+import React, { useState, useLayoutEffect} from 'react'
 import ClassNames from "./Header.module.scss";
 import Logo from "../../Images/logo.png";
 import { Link } from "react-router-dom";
